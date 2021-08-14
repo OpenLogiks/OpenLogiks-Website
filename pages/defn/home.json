@@ -1,0 +1,32 @@
+{
+    "title": "Home Page",
+    "description": "",
+    "keywords": "Open,OpenSource,Logiks,Logiks3,Logiks4",
+    "robot": "index,follow",
+    "slug": "",
+    "template": "default",
+    "css": "style",
+    "js_preload": "",
+    "js_postload": "",
+    "modules_preload": "",
+    "modules_postload": "",
+    "meta": [
+        {
+            "name": "generator",
+            "content": "Logiks v3.6.2 [http://www.openlogiks.org]"
+        },
+        {
+            "name": "viewport",
+            "content": "width=device-width"
+        },
+        {
+            "charset": "utf-8"
+        },
+        {
+            "http-equiv": "X-UA-Compatible",
+            "content": "IE=edge,chrome=1"
+        }
+    ],
+    "enabled": true,
+    "access": "public"
+}

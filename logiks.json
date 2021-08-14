@@ -1,0 +1,34 @@
+{
+    "name": "_website",
+    "version": "1.0.0",
+    "status": "beta",
+    "type": "app",
+    "package":"olgks._website",
+    "description": "A simple bootstrap website for Logiks. It contains a homepage, aboutpage and errorpage",
+    "keywords": "",
+    "license": "MIT License",
+    "homepage": "https://github.com/LogiksApps/_website",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LogiksApps/_website.git"
+    },
+    "logiks-core": {
+        "min": "4.0",
+        "max": "*"
+    },
+    "files": [],
+    "ignore": [
+        ".git",
+        "Readme.txt"
+    ],
+    "dependencies": [],
+    "devDependencies": [],
+    "permissions":[],
+    "schema":[],
+    "authors": [
+        {
+            "name": "Bismay Kumar Mohapatra",
+            "email": "bismay@openlogiks.org"
+        }
+    ]
+}
