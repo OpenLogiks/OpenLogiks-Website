@@ -1,10 +1,8 @@
-# Basic Logiks Based Bootstrap Website
+# OpenLogiks Website 02
 
-This template is Bootstrap based simple website. Based on popular Bootstrap theme, we
-built you a home page, about page and error page.
+This is a brand new website for OpenLogiks. 
 
-Please feel free to add as many as you like pages. No restrictions :-)
+STILL WIP
 
-Resource Reference : 
-+ http://blackrockdigital.github.io/startbootstrap-half-slider/
-+ http://blackrockdigital.github.io/startbootstrap-round-about/
+
+
