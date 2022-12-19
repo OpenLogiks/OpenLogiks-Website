@@ -1,0 +1,103 @@
+{
+	"schema":"1.0",
+	"title":"Manage News",
+	"category":"news",
+	"privilege":"*",
+	"blocked":false,
+	"rowlink":false,
+	"rowsPerPage":20,
+	"showExtraColumn":false,
+	"custombar":false,
+	"source":{
+        "type":"sql",
+        "table":"news",
+        "cols": "news.*",
+       
+        "limit":10
+    },
+     "script":"news", 
+    "buttons1": {
+        "infoview@news.main/{hashid}": {
+            "icon": "fa fa-eye",
+            "label": "View Details"
+        },
+        "deleteData": {
+            "icon": "fa fa-trash",
+            "label": "View Details"
+        }
+    },
+	"datagrid":{
+		"id":{
+			"label":"ID",
+			"hidden":false,
+			"searchable":true,
+			"sortable":true,
+			"groupable":false,
+			"classes":"",
+			"style":"width:50px;",
+			"formatter":"text"
+		},
+		
+		"news_headline":{
+			"label":"News Headline",
+			"searchable":true
+		},
+	
+		"news_date":{
+			"label":"News Date",
+			"searchable":true
+		},
+		"news_url":{
+			"label":"News URL",
+			"searchable":true
+		},
+		"tags":{
+			"label":"Tags",
+			"searchable":true
+		},
+		"desc_short":{
+			"label":"Short Desc",
+			"searchable":true,
+			"hidden":true
+		},
+		
+		"blocked":{
+		    "label":"Blocked",
+			"required":true,
+			"searchable":true,
+			"sortable":true,
+			"filter":{
+				"type":"select",
+				"default":"false",
+				"nofilter":"--",
+				"options":{
+					"true":"Blocked",
+					"false":"Not Blocked"
+				}
+			}
+		},
+		"created_by":{
+			"label":"Created By",
+			"hidden":true,
+			"searchable":true
+		},
+		"created_on":{
+			"label":"Created On",
+			"formatter":"date",
+			"hidden":true,
+			"searchable":true,
+			"filter":{
+				"type":"date"
+			}
+		},
+		"edited_by":{
+			"label":"Updated By",
+			"hidden":true,
+			"searchable":true
+		},
+		"edited_on":{
+			"label":"Updated On",
+			"formatter":"date"
+		}
+	}
+}

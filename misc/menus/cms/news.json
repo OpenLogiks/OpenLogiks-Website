@@ -1,0 +1,20 @@
+{
+	"guid":"global",
+	"menuid":"default",
+	"title":"News",
+	"mode":"*",
+	"category":"",
+	"menugroup":"Others",
+	"class":"",
+	"target":"",
+	"link":"modules/news",
+	"iconpath":"",
+	"tips":"",
+	"site":"",
+	"device":"",
+	"privilege":"",
+	"weight":"",
+	"onmenu":"",
+	"blocked":false,
+	"rules":""
+}

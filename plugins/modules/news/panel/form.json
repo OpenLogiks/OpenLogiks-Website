@@ -1,0 +1,77 @@
+{
+	"postsubmit": {
+
+	},
+	"source": {
+		"type": "sql",
+		"table": "news",
+		"where": ["id"]
+	},
+	"forcefill":{
+	   
+
+	},
+	"fields": {
+		"news_headline": {
+			"label": "Headline (Please enter maximum 60 character only)",
+			"group": "Info",
+			"required": true,
+			"maxlength":60
+		},
+		
+		"news_date": {
+			"label": "Date",
+			"group": "Info",
+			"required": true,
+			"type":"date"
+		},
+		
+		"desc_short": {
+			"label": "Short Description",
+			"group": "Info",
+			"type": "text",
+			"required": false,
+			"maxlength":100,
+			"minlength":90
+		},
+		"news_url": {
+			"label": "News Url",
+			"group": "Info",
+			"type": "text",
+			"required": false
+		},
+		"tags": {
+			"label": "Tags",
+			"group": "Info",
+			"required": true,
+			"type":"tags"
+		},
+		"meta_title": {
+			"label": "Meta Title",
+			"group": "Meta",
+			"type": "text"
+		},
+		"meta_description": {
+			"label": "Meta Description",
+			"group": "Meta",
+			"type": "text",
+			"required":false
+		},
+		"meta_keywords": {
+			"label": "Meta Keywords",
+			"group": "Meta",
+			"type": "text",
+			"required":false
+		},
+		
+		"blocked": {
+			"label": "Blocked",
+			"group":"Info",
+			"type": "dataSelector",
+			"groupid":"visit_on_website",
+			"required":true,
+			"default":"false"
+		}
+		
+	}
+}

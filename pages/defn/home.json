@@ -1,7 +1,7 @@
 {
-    "title": "Home Page",
-    "description": "",
-    "keywords": "Open,OpenSource,Logiks,Logiks3,Logiks4",
+    "title": "Home Page | Best Robust Web Development Framework for robust web application",
+    "description": "Best Robust Web Development Framework",
+    "keywords": "Open,OpenSource,Logiks,Logiks3,Logiks4, web development, php development, node development",
     "robot": "index,follow",
     "slug": "",
     "template": "default",
@@ -27,6 +27,6 @@
             "content": "IE=edge,chrome=1"
         }
     ],
-    "enabled": true,
+    "enabled": "true",
     "access": "public"
 }
