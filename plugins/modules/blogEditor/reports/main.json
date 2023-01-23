@@ -1,0 +1,89 @@
+{
+    "schema":"1.0",
+    "title":"Blog Report",
+    "category":"APMC News",
+    "privilege":"*",
+    "blocked":false,
+    "rowlink":true,
+    "rowsPerPage":20,
+    "showExtraColumn":false,
+    "custombar":false,
+    "script":"blogEditor",
+    "DEBUG":false,
+    "source":{
+        "type":"sql",
+        "table":"blog_tbl",
+        "cols":"id,title,category,tags,type,langs,published,published_on,published_by,edited_on,created_by,created_on,text_excerpt,if(published='true','PUBLISHED','DRAFT') as status",
+        "where":{
+            
+        },
+        "limit":20
+    },
+    "buttons": {
+	    "viewBlogDetails": {
+			"icon": "fa fa-pencil",
+			"label": "View Blog Details"
+		}
+	},
+    "datagrid":{
+        "id":{
+            "label":"ID",
+            "hidden":false,
+            "searchable":false,
+            "sortable":true,
+            "style":"width:50px;"
+        },
+        "blog_tbl.title":{
+            "label":"Title",
+            "searchable":true,
+            "hidden":false,
+            "formatter": "template",
+            "template": "<strong class='blog_title'>%title%</strong><span class='publish_status'> - %status%</span><p>%text_excerpt%</p>"
+        },
+        "blog_tbl.category":{
+            "label":"Category",
+            "searchable":true,
+            "hidden":false
+        },
+        "blog_tbl.type":{
+            "label":"Type",
+            "searchable":true,
+            "hidden":false
+        },
+        "blog_tbl.langs":{
+            "label":"Language",
+            "searchable":true,
+            "hidden":false
+        },
+        "blog_tbl.created_by":{
+            "label":"Author",
+            "searchable":true,
+            "hidden":false
+        },
+        "blog_tbl.tags":{
+            "label":"Tags",
+            "searchable":true,
+            "hidden":true
+        },
+        "blog_tbl.published_on":{
+            "label":"Published On",
+            "searchable":true,
+            "hidden":true
+        },
+        "blog_tbl.published_by":{
+            "label":"Published by",
+            "searchable":true,
+            "hidden":true
+        },
+        "blog_tbl.edited_on":{
+            "label":"Last Updated",
+            "searchable":true,
+            "hidden":true
+        },
+        "blog_tbl.created_on":{
+            "label":"Created on",
+            "searchable":true,
+            "hidden":false
+        }
+    }
+}

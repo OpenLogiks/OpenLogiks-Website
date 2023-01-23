@@ -1,0 +1,160 @@
+{
+	"schema":"1.0",
+	"title":"Case Studies",
+	"category":"career",
+	"privilege":"*",
+	"blocked":false,
+	"rowlink":false,
+	"rowsPerPage":20,
+	"showExtraColumn":false,
+	"custombar":false,
+    "DEBUG":false,
+	"source":{
+		"type":"sql",
+		"table":"casestudies_tbl",
+		"cols": "casestudies_tbl.id,guid,groupid,title,slug,category,description,descs_short,thumbnail,photos,industry,link,casestudy_year,about_client,client,blocked,created_by,created_on,edited_by,edited_on",
+	    
+		"limit":10
+	},
+	  "script":"caseStudies",  
+	"buttons1": {
+		"infoview@caseStudies.main/{hashid}": {
+			"icon": "fa fa-eye",
+			"label": "View Details"
+		},
+		"deleteCaseStudiesData": {
+			"icon": "fa fa-trash",
+			"label": "Delete Record"
+		}
+		
+	},
+
+	"datagrid":{
+		"casestudies_tbl.id":{
+			"label":"ID",
+			"hidden":false,
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		},
+		"slug":{
+			"label":"Slug",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		},
+		"title":{
+		    "label":"Title",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		},
+		"category":{
+		    "label":"Category",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		},
+		"industry":{
+		    "label":"Industry",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		},
+		"link":{
+		    "label":"Link",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		},
+		"descs_short":{
+			"label":"Short Description",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false,
+			"hidden":true
+		},
+		"description":{
+			"label":"Description",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false,
+			"hidden":true
+		},
+		"casestudy_year":{
+		    "label":"Casestudy Year",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false,
+			"hidden":true
+		},
+		"client":{
+		    "label":"Client",
+			"searchable":true,
+			"hidden":true
+		},
+		"about_client":{
+		    "label":"About Client",
+			"searchable":true,
+			"sortable":true,
+			"groupable":false,
+			"hidden":true
+		},
+		
+		"thumbnail":{
+		    "label":"Thumbnail",
+			"searchable":true,
+			"formatter":"attachment",
+			"sortable":true,
+			"groupable":false
+		},
+		"photos":{
+		    "label":"Photos",
+			"searchable":true,
+			"formatter":"attachment",
+			"sortable":true,
+			"groupable":false
+		},
+			"blocked":{
+		    "label":"Blocked",
+			"required":true,
+			"searchable":true,
+			"sortable":true,
+			"filter":{
+				"type":"select",
+				"default":"false",
+				"nofilter":"--",
+				"options":{
+					"true":"Blocked",
+					"false":"Not Blocked"
+				}
+		 },
+		"created_on":{
+			"label":"Created On",
+			"formatter":"date",
+			"sortable":true,
+			"groupable":false
+		},
+		"created_by":{
+			"label":"Created By",
+			"hidden":true,
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		},
+		"edited_on":{
+			"label":"Updated On",
+			"formatter":"date",
+			"sortable":true,
+			"groupable":false
+		},
+		"edited_by":{
+			"label":"Updated By",
+			"hidden":true,
+			"searchable":true,
+			"sortable":true,
+			"groupable":false
+		}
+	}
+}
+}

@@ -4,16 +4,17 @@
                     <li class="st-nav-section nav-item"><a href="#main" class="navbar-brand"><img src="{loadMedia('images/logiks-logo.png')}" alt="Dashcore" class="logo logo-sticky"></a></li>
                     <li class="st-nav-section st-nav-primary nav-item">
                     	<a class="st-root-link nav-link" href="{_link('home')}">Home</a> 
-                    	<a class="st-root-link nav-link" href="{_link('home')}">Solutions</a> 
-                    	<a class="st-root-link nav-link" href="{_link('home')}">Projects</a> 
-                    	<a class="st-root-link nav-link" href="{_link('home')}">Case Studies</a> 
+                    	<!--<a class="st-root-link nav-link" href="{_link('home')}">Solutions</a> 
+                    	<a class="st-root-link nav-link" href="{_link('home')}">Projects</a>-->
                     	<a class="st-root-link nav-link" href="{_link('home')}">Features</a> 
-                    	<a class="st-root-link nav-link" href="{_link('home')}">Documentation</a>
-                    	<a class="st-root-link nav-link" href="{_link('home')}">Blog</a>
-                    	<a class="st-root-link nav-link" href="{_link('home')}">Contact Us</a>
+                    	<a class="st-root-link nav-link" blank='_self' href="https://play.openlogiks.org">Developer Zone</a> 
+                    	<a class="st-root-link nav-link" href="{_link('casestudies')}">Case Studies</a> 
+                    	<a class="st-root-link nav-link" href="https://kms.openlogiks.com">Documentation</a>
+                    	<!--<a class="st-root-link nav-link" href="{_link('blog')}">Blog</a>
+                    	<a class="st-root-link nav-link" href="{_link('home')}">Contact Us</a>-->
                     </li>
                     <li class="st-nav-section st-nav-secondary nav-item">
-                    	<a class="btn btn-rounded btn-outline me-3 px-3" href="login.html" target="_blank"><i class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i> <span class="d-md-none d-lg-inline">Login</span> </a>
+                    	<!--<a class="btn btn-rounded btn-outline me-3 px-3" href="login.html" target="_blank"><i class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i> <span class="d-md-none d-lg-inline">Login</span> </a>-->
                     	<!-- <a class="btn btn-rounded btn-solid px-3" href="signup.html" target="_blank"><i class="fas fa-user-plus d-none d-md-inline me-md-0 me-lg-2"></i> <span class="d-md-none d-lg-inline">Signup</span></a> -->
                     </li>
                     <!-- Mobile Navigation -->

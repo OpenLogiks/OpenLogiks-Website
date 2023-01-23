@@ -1,0 +1,109 @@
+{
+	"source": {
+		"type": "sql",
+		"table": "casestudies_tbl",
+		"where": ["id"]
+	},
+	"forcefill":{
+	    
+
+	},
+	"script":"caseStudies",
+	"fields": {
+	    
+		"title":{
+		    "label":"Title (Please enter maximum 60 character only)",
+			"type":"text",
+			"group":"Info",
+			"maxlength":60,
+			"required":true
+		},
+		"slug":{
+			"label":"Slug",
+			"type":"text",
+			"group":"Info",
+			"src":"title",
+			"required":true,
+			"maxlength":60
+		},
+		
+		"category":{
+		    "label":"Category",
+			"type":"text",
+			"group":"Info",
+			"required":true
+		},
+		
+		"industry": {
+			"label": "industry",
+			"type": "text",
+			"group":"Info",
+			"required":true
+		},
+		"technology": {
+			"label": "Technology",
+			"type": "text",
+			"group":"Info",
+			"required":true
+		},
+		"descs_short":{
+		    "label":"Short Description",
+			"type":"text",
+			"group":"Description",
+			"width":12,
+			"maxlength":100,
+			"minlength":90,
+			"required":false
+			
+		},
+		"description":{
+		    "label":"Description",
+			"type":"richtextarea",
+			"group":"Description",
+			"width":12,
+			"required":true
+			
+		},
+		"link":{
+		    "label":"link",
+		    "group":"Info",
+			"type":"url"
+		},
+		"casestudy_year":{
+		    "label":"Casestudy Year",
+		    "group":"Info",
+			"type":"text"
+		},
+		"client":{
+		    "label":"Client",
+		    "group":"Info",
+			"type":"text"
+		},
+		"about_client":{
+		    "label":"About Client",
+		    "group":"Info",
+			"type":"text"
+		},
+	
+		"thumbnail":{
+		    "label":"Thumbnail (Dimention should not greater than 80px x 54px)",
+			"type":"photo",
+			"group": "Photo",
+			"required":true
+		},
+		"photos":{
+		    "label":"Photos (Dimention should not greater than 376px x 220px)",
+			"type":"photo",
+			"group": "Photo",
+			"required":false
+		},
+		"blocked": {
+			"label": "Blocked",
+			"group":"Info",
+			"type": "dataSelector",
+			"groupid":"visit_on_website",
+			"required":true,
+			"default":"false"
+		}
+	}
+}

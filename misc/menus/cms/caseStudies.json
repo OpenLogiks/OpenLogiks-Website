@@ -1,0 +1,20 @@
+{
+	"guid":"global",
+	"menuid":"default",
+	"title":"Case Studies",
+	"mode":"*",
+	"category":"",
+	"menugroup":"Others",
+	"class":"",
+	"target":"",
+	"link":"modules/caseStudies",
+	"iconpath":"",
+	"tips":"",
+	"site":"",
+	"device":"",
+	"privilege":"",
+	"weight":"",
+	"onmenu":"",
+	"blocked":"",
+	"rules":""
+}

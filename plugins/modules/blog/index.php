@@ -1,0 +1,1 @@
+<?phpif(!defined('ROOT')) exit('No direct script access allowed');//loadModuleLib('news','api');include_once __DIR__."/api.php";$slug = _slug("service_slug/b/c");// printarray($slug);exit;if(strlen($slug['service_slug'])>0) {         include_once __DIR__."/pages/details.php";} else {    include_once __DIR__."/pages/listing.php";}?>

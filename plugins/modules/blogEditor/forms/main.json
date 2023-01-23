@@ -1,0 +1,149 @@
+{
+    "hooks": {
+		"preload": {
+		    "api":["blogEditor","multilang"]
+		},
+		"postsubmit": {
+			"modules":["bizflow","bizlogger"],
+			"api":"blogEditor",
+			"method":"addBlogContent"
+		}
+	},
+    "source":{
+        "type":"sql",
+        "table":"blog_tbl",
+        "where": ["md5(id)"]
+    },
+    "forcefill":{
+        "guid": "#SESS_GUID#"
+    },
+    "disable_simpleform": true,
+    "gotolink_old":"closepopup",
+    "gotolink":"blogEditor",
+    "reportlink":"modules/blogEditor",
+    "fields":{
+        "title":{
+            "label":"Post Title",
+            "group": "post",
+            "required":true,
+            "width":6
+        },
+        "slug": {
+            "label":"Post Slug/URL ID",
+            "type": "slug",
+            "group": "post",
+            "src": "title",
+            "required":true,
+            "width":6
+        },
+        "category":{
+            "label":"Post Catsssssssssssssssssssssssssssegory",
+            "group": "post",
+            "type": "select",
+            "options":{
+                "general":"General",
+                "featured":"Featured"
+                
+            },
+            "required":true,
+            "width":4
+        },
+        "type":{
+            "label":"Type",
+            "group": "post",
+            "type": "select",
+            "options":{
+                "general":"General",
+                "featured":"Featured"
+                
+            },
+            "required":true,
+            "width":4
+        },
+        "langs": {
+            "label":"Available in languages",
+            "group": "post",
+            "type": "dataMethod",
+            "method": "get_lang_list_dropdown",
+            "no-option":"Select Language",
+            "required":true,
+            "multiple":false,
+            "width":4
+        },
+        "tags":{
+            "label":"Post Tags (featured, ad, etc)",
+            "group": "post",
+            "type": "tags",
+            "required":false,
+            "width":12
+        },
+        "text_excerpt": {
+            "label":"Short Excerpt/Extract for the article",
+            "group": "post",
+            "type": "textarea",
+            "required":true,
+            "width":12
+        },
+        "meta_title": {
+            "label":"Meta Title",
+            "type": "text",
+            "group": "meta",
+            "required":false,
+            "width":12
+        },
+        "meta_description": {
+            "label":"Meta Description",
+            "type": "textarea",
+            "group": "meta",
+            "required":false,
+            "width":12
+        },
+        "meta_keywords": {
+            "label":"SEO Keywords",
+            "type": "tags",
+            "group": "meta",
+            "required":false,
+            "width":12
+        },
+        "photos_featured": {
+            "label":"Featured Photo",
+            "type": "photo",
+            "group": "photo",
+            "required":true,
+            "width":6
+        },
+        "photos_thumbnail": {
+            "label":"Thumbnail",
+            "type": "photo",
+            "group": "photo",
+            "required":true,
+            "width":6
+        },
+        "published_on":{
+            "label":"Published On",
+            "group": "publisher",
+            "type": "date",
+            "required":false,
+            "width":4,
+            "vmode": "edit"
+        },
+        "published_by":{
+            "label":"Published By",
+            "group": "publisher",
+            "dbkey":"core",
+            "type": "dataSelectorFromTable",
+            "table":"lgks_users",
+            "columns":"name as title,name as value",
+            "where":{
+                "privilegeid > 1": "RAW",
+                "blocked":"false"
+            },
+            "required":false,
+            "width":4,
+            "vmode": "edit"
+        }
+    }, 
+    "infoview": {
+        
+    }
+}

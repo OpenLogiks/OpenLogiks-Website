@@ -1,0 +1,20 @@
+{
+	"guid":"global",
+	"menuid":"default",
+	"title":"All Posts",
+	"mode":"*",
+	"category":"",
+	"menugroup":"Blog Posts",
+	"class":"",
+	"target":"",
+	"link":"modules/blogEditor",
+	"iconpath":"",
+	"tips":"",
+	"site":"",
+	"device":"",
+	"privilege":"",
+	"weight":1,
+	"onmenu":true,
+	"blocked":false,
+	"rules":""
+}
