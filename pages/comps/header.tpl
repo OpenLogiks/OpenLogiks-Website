@@ -7,9 +7,9 @@
                     	<!--<a class="st-root-link nav-link" href="{_link('home')}">Solutions</a> 
                     	<a class="st-root-link nav-link" href="{_link('home')}">Projects</a>-->
                     	<a class="st-root-link nav-link" href="{_link('home')}">Features</a> 
-                    	<a class="st-root-link nav-link" blank='_self' href="https://play.openlogiks.org">Developer Zone</a> 
+                    	<a class="st-root-link nav-link" target='_blank' href="https://play.openlogiks.org">Developer Zone</a> 
                     	<a class="st-root-link nav-link" href="{_link('casestudies')}">Case Studies</a> 
-                    	<a class="st-root-link nav-link" href="https://kms.openlogiks.com">Documentation</a>
+                    	<a class="st-root-link nav-link" target='_blank' href="https://kms.openlogiks.org">Documentation</a>
                     	<!--<a class="st-root-link nav-link" href="{_link('blog')}">Blog</a>
                     	<a class="st-root-link nav-link" href="{_link('home')}">Contact Us</a>-->
                     </li>
